@@ -1,5 +1,6 @@
 # SwiftUI Settings Sample
 
+SwiftUI practice project
 SwiftUIで「iOS設定アプリ風」の設定画面を実装したサンプルアプリです。
 
 ## Features
