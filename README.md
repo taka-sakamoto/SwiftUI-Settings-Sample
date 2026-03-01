@@ -1,7 +1,8 @@
 # SwiftUI Settings Sample
 
 SwiftUI practice project  
-iOSアプリにおける設定画面を想定し、SwiftUIで構成したサンプルアプリです。
+iOSアプリにおける設定画面を想定し、
+実務アプリで一般的な構成を意識してSwiftUIで実装しました。
 
 ## Features
 - SwiftUI + Form による設定画面
@@ -21,12 +22,13 @@ iOSアプリにおける設定画面を想定し、SwiftUIで構成したサン�
 
 ## Notes
 SwiftUIの状態管理（@StateObject / @EnvironmentObject）と  
-設定の永続化の理解を目的として作成しました。
+設定の永続化の理解を目的として作成しました。  
+画面間での状態共有を意識しています。
 
 ## 工夫した点
 - 設定項目の追加・変更を想定し、Viewを分割
 - SwiftUIの状態管理を意識して実装
 
 ## 今後の改善
-- 設定内容の永続化
 - テストコードの追加
+- 設定項目増加時の構成整理
