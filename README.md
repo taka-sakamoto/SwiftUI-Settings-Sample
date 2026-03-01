@@ -1,7 +1,7 @@
 # SwiftUI Settings Sample
 
 SwiftUI practice project  
-SwiftUIで「iOS設定アプリ風」の設定画面を実装したサンプルアプリです。
+iOSアプリにおける設定画面を想定し、SwiftUIで構成したサンプルアプリです。
 
 ## Features
 - SwiftUI + Form による設定画面
@@ -15,12 +15,18 @@ SwiftUIで「iOS設定アプリ風」の設定画面を実装したサンプル�
 - 外観切り替え（ライト / ダーク / システム）
 
 ## Tech Stack
+- Swift
 - SwiftUI
-- iOS 17+
-- Xcode 26
-- UserDefaults
-- Git / GitHub
+- Xcode
 
 ## Notes
 SwiftUIの状態管理（@StateObject / @EnvironmentObject）と  
 設定の永続化の理解を目的として作成しました。
+
+## 工夫した点
+- 設定項目の追加・変更を想定し、Viewを分割
+- SwiftUIの状態管理を意識して実装
+
+## 今後の改善
+- 設定内容の永続化
+- テストコードの追加
