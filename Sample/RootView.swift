@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct RootView: View {
+    @StateObject private var vm = SettingsModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if vm.isLoggedIn {
+            SettingsView()
+                .environmentObject(vm)
+        } else {
+            LoginView()
+                .environmentObject(vm)
+        }
     }
 }
 

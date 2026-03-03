@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var vm: SettingsModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Login")
+            Button("ログイン") {
+                vm.login()
+            }
+        }
     }
 }
 

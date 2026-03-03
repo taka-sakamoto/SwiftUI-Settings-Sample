@@ -18,7 +18,7 @@ struct SettingsView: View {
             Section(header: Text("外観")) {
                 ForEach(Theme.allCases) { theme in
                     Button {
-                        settings.theme = theme
+                        settings.setTheme(theme)
                     } label: {
                         HStack {
                             VStack(alignment: .leading) {
@@ -34,6 +34,14 @@ struct SettingsView: View {
                         }
                     }
                 }
+            }
+            Section {
+                Button(role: .destructive) {
+                    settings.logout()
+                } label: {
+                    Text("ログアウト")
+                }
+                .foregroundColor(.red)
             }
         }
         .navigationTitle("設定")
