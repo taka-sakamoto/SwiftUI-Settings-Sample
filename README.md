@@ -8,7 +8,7 @@ iOSアプリにおける設定画面を想定し、
 - SwiftUI + Form による設定画面
 - enum を使った外観（ライト / ダーク / システム）の管理
 - List + Checkmark による選択UI
-- UserDefaults による設定の永続化
+- 設定変更時にUserDefaultsへ保存し、アプリ起動時に初期化処理で復元する設計としました
 - 起動時に設定を復元
 
 ## Screens
@@ -21,9 +21,8 @@ iOSアプリにおける設定画面を想定し、
 - Xcode
 
 ## Notes
-SwiftUIの状態管理（@StateObject / @EnvironmentObject）と  
-設定の永続化の理解を目的として作成しました。  
-画面間での状態共有を意識しています。
+設定情報を管理するためにObservableObjectを定義し、Viewの再生成時にも状態が保持されるよう@StateObjectを使用しました。  
+画面間共有のために@EnvironmentObjectを利用しています。
 
 ## 工夫した点
 - 設定項目の追加・変更を想定し、Viewを分割
