@@ -1,8 +1,7 @@
 # SwiftUI Settings Sample
 
-SwiftUI practice project  
-iOSアプリにおける設定画面を想定し、
-実務アプリで一般的な構成を意識してSwiftUIで実装しました。
+SwiftUIで実務アプリを想定した設定画面のUIサンプルです。
+Form / List / enumによる外観設定など、一般的な設定画面の構成を再現しています。
 
 ## Features
 - SwiftUI + Form による設定画面
