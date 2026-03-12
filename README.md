@@ -29,7 +29,9 @@ Appearance Selection Screen
 - UserDefaults  
 
 ## Architecture
-- MVVM  
+- MVVM
+- SwiftUI
+- async/await
 
 ## Notes
 - 設定情報を管理するために ObservableObject を定義
