@@ -28,11 +28,6 @@ Appearance Selection Screen
 - Xcode
 - UserDefaults  
 
-## Architecture
-- MVVM
-- SwiftUI
-- async/await
-
 ## Notes
 - 設定情報を管理するために ObservableObject を定義
 - View の再生成時にも状態が保持されるよう @StateObject を使用
